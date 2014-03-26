@@ -1,0 +1,4 @@
+ng-news
+=======
+
+angularJS training
