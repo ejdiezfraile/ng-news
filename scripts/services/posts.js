@@ -1,13 +1,13 @@
 'use strict';
 
 app.factory('Post',
-	function ($firebase, FIREBASE_URL, User) {
-		var ref = new Firebase(FIREBASE_URL + 'posts');
+  function ($firebase, FIREBASE_URL, User) {
+    var ref = new Firebase(FIREBASE_URL + 'posts');
 
-		var posts = $firebase(ref);
+    var posts = $firebase(ref);
 
-		var Post = {
-			all: posts,
+    var Post = {
+      all: posts,
       create: function (post) {
         if (User.signedIn()) {
           var user = User.getCurrent();
@@ -62,5 +62,5 @@ app.factory('Post',
       }
     };
 
-		return Post;
-	});
+    return Post;
+  });

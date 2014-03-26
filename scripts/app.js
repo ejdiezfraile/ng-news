@@ -18,9 +18,9 @@ app.config(function ($routeProvider) {
     controller: 'PostsCtrl',
   })
   .when('/posts/:postId', {
-		templateUrl: 'views/showpost.html',
-		controller: 'PostViewCtrl'
-	})
+    templateUrl: 'views/showpost.html',
+    controller: 'PostViewCtrl'
+  })
   .when('/login', {
     templateUrl: 'views/login.html',
     controller: 'AuthCtrl'
@@ -33,7 +33,7 @@ app.config(function ($routeProvider) {
     templateUrl: 'views/profile.html',
     controller: 'ProfileCtrl'
   })
-	.otherwise({
-		redirectTo: '/'
+  .otherwise({
+    redirectTo: '/'
   });
 });
