@@ -1,7 +1,5 @@
 'use strict';
 
-//Me llego en: Using a directive to validate form data
-
 app.directive('checkUsername', function(User) {
   var usernameRegexp = /^[^.$\[\]#\/\s]+$/;
 
